@@ -59,8 +59,19 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    
+
   }
   img {
     width: 50%;
+  }
+  .accordion:hover .icon {
+    color: black;
+  }
+  
+  .item:hover>.imgMem {
+    height: 50%;
+  }
+  
+  .itemInput:hover~.itemTitle>.icon {
+    transform: rotate(45deg);
   }
