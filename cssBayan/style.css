@@ -75,3 +75,16 @@
   .itemInput:hover~.itemTitle>.icon {
     transform: rotate(45deg);
   }
+
+  .itemInput:checked~.itemTitle {
+    color: blue;
+  }
+  
+  .itemInput:checked~.itemTitle>.icon {
+    color: blue;
+    transform: rotate(45deg);
+  }
+  
+  .itemInput:checked~.imgMem {
+    height: 50%;
+  }
