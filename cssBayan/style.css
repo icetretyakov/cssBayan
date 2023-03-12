@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f6f6ec;
+    color: black;
+  }
+  
+  .accordion {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #E2E6E6;
+  }
+  
+  .item {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid #E2E6E6;
+  }
+  
+  .itemInput {
+    width: 0;
+    height: 0;
+    appearance: none;
+  }
+  
+  .itemTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+  }
+  
+  .icon {
+    font-size: 40px;
+    font-weight: 1000;
+    color: #f6f6ec;
+  }
+  
+  .imgMem {
+    height: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+  img {
+    width: 50%;
+  }
+  .accordion:hover .icon {
+    color: black;
+  }
+  
+  .item:hover>.imgMem {
+    height: 50%;
+  }
+  
+  .itemInput:hover~.itemTitle>.icon {
+    transform: rotate(45deg);
+  }
+
+  .itemInput:checked~.itemTitle {
+    color: blue;
+  }
+  
+  .itemInput:checked~.itemTitle>.icon {
+    color: blue;
+    transform: rotate(45deg);
+  }
+  
+  .itemInput:checked~.imgMem {
+    height: 50%;
+  }
